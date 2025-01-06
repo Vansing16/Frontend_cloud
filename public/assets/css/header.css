@@ -1,0 +1,41 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+
+.header-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-container nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container nav a,
+.header-container nav p {
+    margin-right: 2px;
+    text-decoration: none;
+    color: rgb(245, 238, 238);
+    font-size: large;
+    padding: 15px;
+}
+
+.header-container nav a:hover {
+    color: #ba3d6d;
+}
+
+.header-container span {
+    color: pink;
+}
+
+.header-container p {
+    margin: 0;
+    display: inline-block;
+}

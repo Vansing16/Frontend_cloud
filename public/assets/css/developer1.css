@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Optional: adding a soft background for the body */
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid red;
+}
+
+/* -------end header---- */
+/* Other styles for your webpage */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.logo-designer {
+    background-color: #ffebf0;
+    padding: 40px 20px; /* Increased padding for better spacing */
+}
+
+.logo-designer h1 {
+    text-align: center;
+    color: #ce7373;
+    font-size: 30px;
+    margin-bottom: 40px; /* Added margin-bottom for better separation */
+}
+
+.designer-profile {
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 810px;
+    margin: 20px auto;
+    height: 400px;
+    padding: 30px; /* Increased padding for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+}
+
+.designer-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin-bottom for better spacing */
+}
+
+.designer-header img {
+    border-radius: 50%;
+    width: 100px; /* Increased size for better visibility */
+    height: 100px; /* Increased size for better visibility */
+    margin-right: 20px;
+}
+
+.designer-info h2 {
+    margin: 0;
+    font-size: 26px; /* Slightly increased font-size */
+}
+
+.designer-info p {
+    margin: 5px 0 0;
+    font-size: 18px; /* Increased font-size */
+    color: #ccc;
+}
+
+.designer-details h3 {
+    margin-top: 0;
+    font-size: 22px; /* Adjusted font-size */
+    margin-bottom: 20px; /* Added margin-bottom for better spacing */
+}
+
+.designer-details p {
+    font-size: 16px; /* Adjusted font-size */
+    line-height: 1.6; /* Added line-height for better readability */
+}
+
+.contact-button {
+    display: block;
+    width: 95%;
+    padding: 15px; /* Increased padding for better touch area */
+    margin-top: 70px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-button:hover {
+    background-color: #ff1493;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .designer-profile {
+        padding: 20px;
+    }
+
+    .designer-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .designer-header img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .designer-info h2 {
+        font-size: 22px;
+    }
+
+    .designer-info p {
+        font-size: 16px;
+    }
+
+    .designer-details h3 {
+        font-size: 20px;
+    }
+
+    .designer-details p {
+        font-size: 14px;
+    }
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f6caff;
+    text-align: center;
+}
+
+.feature {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.reviews {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.review-cards {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+}
+
+.review-card {
+    background-color: #ffcbff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    min-width: 300px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.scroll-button {
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+/*footer*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-column-i {
+    flex: 2;
+    margin: 0 40px;
+}
+
+.footer-column-ii,
+.footer-column-iii {
+    flex: 1;
+    margin: 0 20px;
+    padding-left: 200px;
+}
+
+.footer-column-i h2 {
+    color: #cf5c88;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-column-i h2 span {
+    color: #fff;
+}
+
+.footer-column-ii h3,
+.footer-column-iii h3 {
+    color: #cf5c88;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column-i p {
+    margin-bottom: 20px;
+}
+
+.footer-column-ii ul,
+.footer-column-iii ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column-ii ul li,
+.footer-column-iii ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column-ii ul li a,
+.footer-column-iii ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column-ii ul li a:hover,
+.footer-column-iii ul li a:hover {
+    color: #cf5c88;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column-i,
+    .footer-column-ii,
+    .footer-column-iii {
+        margin: 20px 0;
+    }
+}
+/* end footer*/

@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 222, 222);
+    padding: 10px 30px;
+    border-bottom: 1px solid rgb(18, 13, 14);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.logo span {
+    color: #ba3d6d;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.user-menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-menu-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.user-menu-content.show {
+    display: block;
+}
+
+.user-menu-content a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.user-menu-content a svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.user-menu-content a:hover {
+    background-color: rgb(218, 115, 132);
+}
+
+hr {
+    display: block;
+    margin: 5px;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* Sidebar */
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 25%; /* Adjusted width for better content display */
+    background-color: rgb(235, 206, 206);
+    height: 150vh; /* Full viewport height */
+    padding: 20px 10px; /* Increased padding for better spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.sidebar .menu-item svg {
+    margin-right: 15px; /* Adjusted margin for better alignment */
+    width: 24px;
+    height: 24px;
+    color: #ba3d6d; /* Add color to icons */
+}
+
+.sidebar .menu-item:hover {
+    background-color: #e0e0e0;
+    color: #751616; /* Darken text color on hover */
+}
+
+.sidebar .menu-item a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar .menu-item a:hover {
+    color: #db9a9a; /* Darken text color on hover */
+}
+
+.sidebar .menu-item svg {
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Ministry Info */
+.company-info {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    padding-left: 50px;
+}
+
+.company-info img {
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+    margin-left: 100px;
+}
+
+.company-details {
+    margin-left: 4%;
+}
+
+.company-details h1 {
+    font-size: 32px;
+    color: black; /* Darker color for better readability */
+    margin: 0 0 10px 0; /* Margin adjustments */
+}
+
+.company-details h1 span {
+    color: #ba3d6d; /* Highlight color for span */
+}
+
+.company-details p {
+    font-size: 16px;
+    color: rgb(131, 111, 114); /* Slightly lighter color for paragraph text */
+    margin: 0;
+}
+
+.company-details a {
+    color: black;
+    text-decoration: none; /* Optional: Remove underline from links */
+}

@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------start---- */
+
+.category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.category a {
+    text-decoration: none;
+    color: #a12b58;
+}
+
+.category .findwork {
+    padding-left: 30px;
+}
+
+.category .servicetype {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.category .servicetype a {
+    margin: 10px;
+    margin-right: 40px;
+}
+.category a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* -------end---- */
+
+.top-banner {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    height: 200px;
+}
+
+.top-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #b64b74;
+}
+
+.services {
+    background-color: #ffebf0;
+    padding: 50px 30px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    height: 300px;
+    margin: auto;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.service-item:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s;
+}
+.service-item img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    margin-top: 20px;
+}
+
+.about-services {
+    background-color: #fef5f9;
+    padding: 50px 0px;
+}
+
+.about-services-text {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects {
+    background-color: #ffebf0;
+    padding: 50px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container_iii {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 50px;
+    background-color: #ffdce9;
+}
+
+.container_iii ul {
+    width: calc(50% - 10px); /* Set width for the list */
+    padding: 0;
+    padding-top: 60px;
+    font-size: 20px;
+}
+
+.container_iii ul li {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+.container_iii span {
+    color: #a12b58;
+    font-weight: bold;
+}
+.container_iii ul li img {
+    margin-right: 10px;
+    width: 50px;
+}
+
+.container_iii .image {
+    width: calc(50% - 50px); /* Set width for the image */
+    text-align: center;
+}
+
+.container_iii .image img {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 8px 12px rgba(239, 206, 206, 0.1);
+    border-radius: 15px;
+}
+
+/* Other styles for your webpage */
+
+.projects {
+    background-color: #ffebf0;
+    padding: 50px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(167, 35, 79);
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-item {
+    background-color: #fbd3d3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    min-width: 240px; /* Ensures the items do not shrink too much on smaller screens */
+}
+
+.project-item img {
+    width: 100%;
+    display: block;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1200px) {
+    .project-item {
+        flex: 1 1 calc(50% - 40px);
+        max-width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* footer*/
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-column-i {
+    flex: 2;
+    margin: 0 40px;
+}
+
+.footer-column-ii,
+.footer-column-iii {
+    flex: 1;
+    margin: 0 20px;
+    padding-left: 200px;
+}
+
+.footer-column-i h2 {
+    color: #cf5c88;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-column-i h2 span {
+    color: #fff;
+}
+
+.footer-column-ii h3,
+.footer-column-iii h3 {
+    color: #cf5c88;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column-i p {
+    margin-bottom: 20px;
+}
+
+.footer-column-ii ul,
+.footer-column-iii ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column-ii ul li,
+.footer-column-iii ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column-ii ul li a,
+.footer-column-iii ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column-ii ul li a:hover,
+.footer-column-iii ul li a:hover {
+    color: #cf5c88;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column-i,
+    .footer-column-ii,
+    .footer-column-iii {
+        margin: 20px 0;
+    }
+}
+/* end footer*/
