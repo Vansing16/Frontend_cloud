@@ -17,7 +17,7 @@ use App\Http\Controllers\AdminAuthController;
 
 
 
-
+// lol
 
 
 Route::get('/', function () {
