@@ -17,7 +17,7 @@ use App\Http\Controllers\AdminAuthController;
 
 
 
-// Redirect /admin to the admin dashboard or another specific route
+
 
 
 Route::get('/', function () {
