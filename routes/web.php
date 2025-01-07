@@ -43,7 +43,7 @@ Route::post('login', [LoginController::class, 'login'])->name('login');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('signup', [RegisterController::class, 'signupForm'])->name('signupForm');
-Route::post('signup', [RegisterController::class, 'signup'])->name('signupSubmit');
+Route::post('signup', [RegisterController::class, 'signup'])->name('signup');
 
 // Freelancer display routes
 Route::get('/logo', [FreelancerController::class, 'showFreelancer'])->name('showFreelancer');
