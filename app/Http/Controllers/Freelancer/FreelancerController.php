@@ -33,8 +33,8 @@ class FreelancerController extends Controller
             'professional_role' => 'required|string|max:255',
             'work_type' => 'required|string',
             'bio' => 'required|string',
-            'profile_image_upload' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-            'resume_upload' => 'required|mimes:pdf,doc,docx|max:2048',
+            'profile_image_upload' => 'required|image|mimes:jpeg,png,jpg,gif|max:10240', // 10MB for images
+            'resume_upload' => 'required|mimes:pdf,doc,docx|max:10240', // 10MB for resumes
         ]);
 
         // Handle file uploads
@@ -55,7 +55,7 @@ class FreelancerController extends Controller
         ]);
 
         // Redirect with success message
-        return redirect()->route('freelancer.loginForm')->with('success', 'Sign up successful!');
+        return redirect('/addServices')->with('success', 'Sign up successful!');
     }
 
     public function profile()

@@ -70,7 +70,7 @@ Route::group(['prefix' => 'freelancer'], function () {
 
     // Signup routes
     Route::get('/signup', [FreelancerController::class, 'signupForm'])->name("freelancer.signupForm");
-    Route::post('/signup', [FreelancerController::class, 'signup'])->name("freelancer.signupSubmit");
+    Route::post('/signup', [FreelancerController::class, 'signup'])->name("freelancer.signup");
 });
 
 // Message routes
