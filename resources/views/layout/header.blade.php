@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{asset('assets/css/header.css')}}">
+<link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
 <header>
     <div class="header-container">
         <div class="logo">Service<span>Sphere</span></div>
@@ -7,13 +7,13 @@
             <a href="/about">About</a>
             <a href="/contactUs">Contact Us</a>
 
-            <?php if (isset($user->id)) { ?>
-                <p>Welcome, <?php echo htmlspecialchars($user->first_name); ?>!</p>
+            @auth
+                <p>Welcome, {{ auth()->user()->first_name }}!</p>
                 <a href="/logout">Log out</a>
-            <?php } else { ?>
+            @else
                 <a href="/login">Log in</a>
                 <a href="/signup">Sign up</a>
-            <?php } ?>
+            @endauth
         </nav>
     </div>
 </header>

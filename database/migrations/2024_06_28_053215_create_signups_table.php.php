@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('type');
+            $table->string('type')->default('user');
             $table->timestamps();
         });
     }

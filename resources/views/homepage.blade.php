@@ -101,8 +101,10 @@
 
 
 <section class="reviews">
-    <div class="container">
+    <div class="div">
         <h2>Customer Reviews</h2>
+    </div>
+    <div class="container">
         <div class="review">
             <img src="{{asset('assets/image/user.png')}}" alt="User 1">
             <div class="review-text">

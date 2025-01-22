@@ -19,7 +19,10 @@ Route::get('/', function () {
     return view('homepage', compact('user'));
 });
 
-Route::view('/about', 'about');
+Route::get('/about', function () {
+    $user = auth()->user();
+    return view('about', compact('user'));
+});
 Route::get('/development', function () {
     $user = auth()->user();
     return view('development', compact('user'));
