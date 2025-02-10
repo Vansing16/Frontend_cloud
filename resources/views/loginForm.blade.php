@@ -25,6 +25,7 @@
         <div class="account-actions">
             <a href="/signup">Don't have an account yet?</a>
             <a href="/signup">Create an account</a>
+            <a href="/freelancer/login">Log in as freelancer?</a>
         </div>
     </div>
 </section>

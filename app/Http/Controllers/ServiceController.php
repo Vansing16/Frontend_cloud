@@ -54,7 +54,7 @@ class ServiceController extends Controller
     public function viewService()
     {
         $me = auth()->user();
-        $services = Service::where('freelancer_id', $me->id)->with('freelancer')->get();
+        $services = Service::where('id', $me->id)->with('freelancer')->get();
         // $services = Service::all();
         return view('freelancersite.Project.viewService', compact('services'));
     }

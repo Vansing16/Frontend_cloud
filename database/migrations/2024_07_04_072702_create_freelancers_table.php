@@ -17,9 +17,9 @@ return new class extends Migration
         $table->string('last_name');
         $table->string('email')->unique();
         $table->string('password');
-        $table->string('professional_role');
-        $table->string('work_type');
-        $table->text('bio');
+        $table->string('professional_role')->nullable();
+        $table->string('work_type')->nullable();
+        $table->text('bio')->nullable();
         $table->string('profile_image_path')->nullable();
         $table->string('resume_path')->nullable();
         $table->timestamps();

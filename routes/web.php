@@ -15,8 +15,14 @@ use App\Http\Controllers\AdminAuthController;
 
 // Main routes
 Route::get('/', function () {
-    $user = auth()->user();
-    return view('homepage', compact('user'));
+    if (!auth()->check()) {
+        return redirect()->route('loginForm'); // Redirect to login if not logged in
+    } 
+    if (auth()->user()->freelancer) {
+        return redirect()->route('freelancer.profile'); // Redirect to freelancer dashboard if freelancer
+    } else {
+        return view('homepage'); // Redirect to homepage if user
+    }
 });
 
 Route::get('/about', function () {

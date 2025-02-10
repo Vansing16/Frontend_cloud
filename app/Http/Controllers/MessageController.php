@@ -34,7 +34,7 @@ class MessageController extends Controller
     public function viewMessage()
     {
         $me = auth()->user();
-        $messages = Message::where('freelancer_id', $me->id)->with('user')->get();
+        $messages = Message::where('id', $me->id)->with('user')->get();
         error_log($messages);
         return view('freelancersite.Project.viewMessage', compact('messages'));
     }
