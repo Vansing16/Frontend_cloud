@@ -3,11 +3,6 @@
 <link rel="stylesheet" href="{{asset('assets/css/homepage.css')}}">
 <section class="hero">
     <div class="category">
-        <div class="findwork">
-            <a href="{{route('freelancer.loginForm')}}">
-                Find Work
-            </a>
-        </div>
         <div class="servicetype">
             <a href="/design">Design</a>
             <a href="/development">

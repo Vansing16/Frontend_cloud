@@ -5,11 +5,6 @@
 
 <section class="hero">
     <div class="category">
-        <div class="findwork">
-            <a href="#">
-                Find Work
-            </a>
-        </div>
         <div class="servicetype">
             <a href="/design">
                 Design
