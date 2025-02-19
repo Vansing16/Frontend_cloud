@@ -11,15 +11,19 @@ class ContactController extends Controller
     public function submit(Request $request)
     {
         // Validate the incoming request data
-        $validatedData = $request->validate([
+        $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'message' => 'required|string',
+            'email' => 'required|string|email|max:255',
+            'message' => 'required|string|max:255', // Example validation rule for message content
         ]);
 
         try {
             // Create a new contact message using the validated data
-            ContactUs::create($validatedData);
+            $contactMessage = new contactUs();
+            $contactMessage->name = $request->input('name');
+            $contactMessage->email = $request->input('email');
+            $contactMessage->message = $request->input('message');
+            $contactMessage->save();
 
             // Redirect back with a success message
             return redirect()->back()->with('success', 'Message sent successfully!');

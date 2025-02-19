@@ -8,7 +8,7 @@
             <a href="/contactUs">Contact Us</a>
 
             @auth
-                <p>Welcome, {{ auth()->user()->first_name }}!</p>
+                {{-- <p>Welcome, {{ auth()->user()->first_name }}!</p> --}}
                 <a href="/logout">Log out</a>
             @else
                 <a href="/login">Log in</a>

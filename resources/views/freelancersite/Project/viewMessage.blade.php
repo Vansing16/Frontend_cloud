@@ -25,9 +25,9 @@
             <tbody>
                 @forelse ($messages as $message)
                 <tr>
-                    <td>{{ $message->user->first_name}} {{$message->user->last_name}}</td>
-                    <td>{{ $message->user->email }}</td>
-                    <td>{{ $message->contact_info }}</td>
+                    <td>{{ $message->name}}</td>
+                    <td>{{ $message->email }}</td>
+                    <td>{{ $message->contactinfo }}</td>
                     <td>{{ $message->message }}</td>
                     <td>{{ $message->created_at->format('Y-m-d H:i:s') }}</td>
                 </tr>

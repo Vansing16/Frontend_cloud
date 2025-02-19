@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Freelancer;
 use Illuminate\Http\Request;
 use App\Models\Message;
@@ -22,10 +23,12 @@ class MessageController extends Controller
 
         // Create a new message
         $message = new Message();
-        $message->user_id = auth()->user()->id;
+        // $message->id = auth()->user()->id;
         $message->freelancer_id = $freelancerId;
+        $message->name = auth()->user()->first_name . " " . auth()->user()->last_name;
+        $message->email = auth()->user()->email;
         $message->message = $request->input('message');
-        $message->contact_info = $request->input('contactinfo'); // Assuming you have a 'content' field in your request
+        $message->contactinfo = $request->input('contactinfo'); // Assuming you have a 'content' field in your request
         // Save the message
         error_log($message);
         $message->save();
